@@ -7,7 +7,7 @@
 
 ### Links and Resources
 
-- [Pull Request](http://xyz.com)
+- [Pull Request](https://github.com/abferris/lab26/pull/1)
 - [front-end sandbox result](https://24q3om23or.codesandbox.io/) 
 - [front-end sandbox code](https://codesandbox.io/s/24q3om23or)
 
