@@ -1,38 +1,36 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from "react";
+import { connect } from "react-redux";
+import Header from "./components/header.js";
+import Footer from "./components/footer.js";
+import "./design/reset.css"
+import "./design/app.scss"
 
-const Header = () => {
-  return (
-    <header>
-      <h1>Header</h1>
-    </header>
-  );
-};
-
-class Footer extends React.Component {
-  render() {
-    return <footer>&copy; 2018 Code Fellows</footer>;
-  }
-}
-
-class Main extends React.Component {
+class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      stuff: 0,
+      counter: 0
     };
   }
 
-  handleButtonClick = e => {
+  handleButtonClickIncrement = e => {
     e.preventDefault();
-    this.setState({ stuff: Math.floor(Math.random() * 20 + 1) });
+    this.setState({ counter: this.state.counter + 1 });
+  };
+
+  handleButtonClickDecrement = e => {
+    e.preventDefault();
+    this.setState({ counter: this.state.counter - 1 });
   };
 
   render() {
     return (
       <div>
-        <h4>{this.state.stuff}</h4>
-        <button onClick={this.handleButtonClick}>Click Me</button>
+        <h4>{this.state.counter}</h4>
+        <div>
+        <a onClick={this.handleButtonClickIncrement} id='incrementor'></a>
+        <a onClick={this.handleButtonClickDecrement} id ="decrementor"></a>
+        </div>
       </div>
     );
   }
@@ -43,7 +41,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <Main />
+        <Counter />
         <Footer />
       </React.Fragment>
     );

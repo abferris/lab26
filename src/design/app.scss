@@ -1,0 +1,65 @@
+$backgroundcolor: rgb(146, 145, 145);
+body{
+  height:100%;
+  width:100%;
+  background: black;
+  padding-bottom: 30px;
+  header{
+    top:10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: $backgroundcolor;
+    h1{
+      font-size: 20px;
+      padding:10px 10px;
+    }
+  }
+  h4{
+    background-color: $backgroundcolor;
+    width: 20vw;
+    height: 20vw;
+    margin: 30px 40vw;
+    text-align: center;
+    font-size: 17vw;
+  }
+
+  #incrementor{
+    display: inline-block;
+    height: 60vw;
+    width: 40vw;
+    margin: 5vw;
+    background-image:url("https://i.kym-cdn.com/entries/icons/original/000/000/574/moar-cat.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: $backgroundcolor;
+  }
+  #decrementor{
+    display: inline-block;
+    height: 60vw;
+    width: 40vw;
+    margin: 5vw;
+    background-image:url("http://www.quickmeme.com/img/2a/2ae998052dd5fd943ea97cdfc42463f6a6417f3a8119fa7f931524732a31c051.jpg");
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: contain;
+    background-color: $backgroundcolor;
+  }
+
+
+  
+
+  footer{
+    position: fixed;
+    background-color: $backgroundcolor;
+    border-radius: 5px;
+    bottom: 0px;
+    left: 0px;
+    height:20px;
+    width: 100%;
+  }
+
+}
+
